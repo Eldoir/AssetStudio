@@ -1,3 +1,16 @@
+# Eldoir's notes:
+To use AssetStudio:
+- Download the project and open the solution with VS.
+- Read the **Build** section of this Readme to build properly.
+- You will find the FBX SDK at: [Autodesk website link](https://www.autodesk.com/developer-network/platform-technologies/fbx-sdk-2020-0). You should choose the **FBX SDK 2020.0.1 VS2017** version as stated in the **Build** section.
+- **Very important**: install the FBX SDK on your disk **C:** !!! I tried on disk D: and lost a lot of time dealing with stupid linking errors when building.
+- The **Build** section says to "_change include directory and library directory to point to the FBX SDK directory_". That means:
+  * Right-clicking on the _AssetStudioFBXNative_ project in the solution, then going to _Properties_ -> _VC++ Directories_ and editing the _Include Directories_ to add a path to _C:\Program Files\Autodesk\FBX\FBX SDK\2020.0.1\include_
+  * Also editing the _Library Directories_ to add a path to _C:\Program Files\Autodesk\FBX\FBX SDK\2020.0.1\lib\vs2017\x86_.
+  * Then hit Apply and try to build.
+- Once the build has succeeded, you can launch **AssetStudio** in _AssetStudio-master\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe_.
+- Enjoy! You can now open files with extension _*.assets_ like _resources.assets_, _sharedassets0.assets_, and also level files like _level0_, _level1_... from any Unity app.
+
 # AssetStudio
 [![Build status](https://ci.appveyor.com/api/projects/status/rnu7l90422pdewx4?svg=true)](https://ci.appveyor.com/project/Perfare/assetstudio/branch/master/artifacts)
 
