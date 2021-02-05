@@ -8,7 +8,7 @@ To use AssetStudio:
   * Right-clicking on the _AssetStudioFBXNative_ project in the solution, then going to _Properties_ -> _VC++ Directories_ and editing the _Include Directories_ to add a path to _C:\Program Files\Autodesk\FBX\FBX SDK\2020.0.1\include_
   * Also editing the _Library Directories_ to add a path to _C:\Program Files\Autodesk\FBX\FBX SDK\2020.0.1\lib\vs2017\x86_.
   * Then hit Apply and try to build.
-- Once the build has succeeded, you can launch **AssetStudio** in _AssetStudio-master\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe_.
+- Once the build has succeeded, you can launch **AssetStudio** in _AssetStudio\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe_.
 - Enjoy! You can now open files with extension _*.assets_ like _resources.assets_, _sharedassets0.assets_, and also level files like _level0_, _level1_... from any Unity app.
 
 # AssetStudio
